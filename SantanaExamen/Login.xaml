@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SantanaExamen.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="Sistema de pagos" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <Image Source="LogoU.png"/>
+        <Entry x:Name="txtUsuario" Placeholder="Ingrese Usuario"/>
+        <Entry x:Name="txtClave" Placeholder="Ingrese Clave" IsPassword="True"/>
+        <Button x:Name="btnIngreso" Text="Ingresar" Clicked="btnIngreso_Clicked"/>
+    </StackLayout>
+
+</ContentPage>

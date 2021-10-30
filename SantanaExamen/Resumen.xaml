@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SantanaExamen.Resumen">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="#2196F3" Padding="20" CornerRadius="0">
+                <Label Text="Resumen" HorizontalTextAlignment="Center" TextColor="White" FontSize="20"/>
+            </Frame>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Label Text="Usuario conectado:" Grid.Row="0" Grid.Column="0"/>
+                <Label x:Name="lblUsuario" Grid.Row="0" Grid.Column="1"/>
+                <Label Text="Nombre:" Grid.Row="1" Grid.Column="0"/>
+                <Label x:Name="lblNombre" Grid.Row="1" Grid.Column="1"/>
+                <Label Text="Total a Pagar:" Grid.Row="2" Grid.Column="0"/>
+                <Label x:Name="lblTotal" Grid.Row="2" Grid.Column="1"/>
+          </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
